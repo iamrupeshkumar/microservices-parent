@@ -116,7 +116,7 @@ mvn spring-boot:run
 - Clean, readable, and interview-friendly codebase
 
 ---
-##🚀 Future Enhancements
+## 🚀 Future Enhancements
 
 - Add Spring Cloud Config Server
 
@@ -133,7 +133,7 @@ mvn spring-boot:run
 
 ---
 
-##👨‍💻 Author
+## 👨‍💻 Author
 
 ###Rupesh Kumar
 Backend Developer | Java | Spring Boot | Microservices
