@@ -103,7 +103,7 @@ mvn spring-boot:run
 ```
 
 ---
-🧪 Design & Best Practices
+##🧪 Design & Best Practices
 
 - Layered architecture (Controller → Service → Repository)
 
@@ -116,7 +116,7 @@ mvn spring-boot:run
 - Clean, readable, and interview-friendly codebase
 
 ---
-🚀 Future Enhancements
+##🚀 Future Enhancements
 
 - Add Spring Cloud Config Server
 
@@ -133,8 +133,8 @@ mvn spring-boot:run
 
 ---
 
-👨‍💻 Author
+##👨‍💻 Author
 
-Rupesh Kumar
+###Rupesh Kumar
 Backend Developer | Java | Spring Boot | Microservices
 GitHub: https://github.com/iamrupeshkumar
