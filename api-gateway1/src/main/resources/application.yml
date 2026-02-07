@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway1
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: false
+    hostname: localhost
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health
+#    health:
+#      show-details: always
+
+info:
+  app:
+    name: API Gateway
+    description: Spring Cloud Gateway service
+    version: 1.0.0
