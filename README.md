@@ -103,7 +103,7 @@ mvn spring-boot:run
 ```
 
 ---
-##🧪 Design & Best Practices
+## 🧪 Design & Best Practices
 
 - Layered architecture (Controller → Service → Repository)
 
