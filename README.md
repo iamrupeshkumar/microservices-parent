@@ -100,7 +100,7 @@ From each service directory:
 
 ```bash
 mvn spring-boot:run
-
+```
 
 ---
 🧪 Design & Best Practices
