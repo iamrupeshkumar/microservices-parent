@@ -102,6 +102,7 @@ From each service directory:
 mvn spring-boot:run
 
 
+---
 🧪 Design & Best Practices
 
 - Layered architecture (Controller → Service → Repository)
@@ -114,7 +115,7 @@ mvn spring-boot:run
 
 - Clean, readable, and interview-friendly codebase
 
-
+---
 🚀 Future Enhancements
 
 - Add Spring Cloud Config Server
@@ -130,7 +131,7 @@ mvn spring-boot:run
 - Add API documentation using Swagger/OpenAPI
 
 
-
+---
 
 👨‍💻 Author
 
