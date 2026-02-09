@@ -5,7 +5,7 @@ This repository contains a demo microservices project built using Spring Boot an
 The project demonstrates core microservices concepts such as service discovery, API Gateway,
 and shared libraries following industry-aligned practices.
 
-The implementation is intentionally kept simple with one business microservice
+The implementation is intentionally kept simple with two business microservice
 to focus on architecture and fundamentals rather than business complexity.
 
 ---
@@ -25,9 +25,24 @@ The main goals of this project are to:
 
 ## 🧱 Architecture Overview
 
-Client → API Gateway → User Service  
-                     ↘  
-                      Eureka Server  
+                    ┌──────────────────┐
+                    │     Client       │
+                    └─────────┬────────┘
+                              │
+                    ┌─────────▼────────┐
+                    │   API Gateway    │
+                    └───────┬───────┬──┘
+                            │       │
+            ┌───────────────▼──┐ ┌──▼────────────────┐
+            │   User Service   │ │   Order Service   │
+            └───────────────┬──┘ └───────────────┬───┘
+                            │                    │
+                            └──────────┬─────────┘
+                                       │
+                           ┌───────────▼───────────┐
+                           │     Eureka Server     │
+                           └───────────────────────┘
+
 
 ---
 
@@ -51,6 +66,7 @@ Client → API Gateway → User Service
 | discovery-server | Eureka service discovery server  |
 | api-gateway      | Routes requests to microservices |
 | user-service     | Demo business microservice       |
+| order-service    | Demo business microservice       |
 | common-lib       | Shared DTOs and utilities        |
 
 ---
@@ -91,6 +107,7 @@ This avoids duplication and keeps services clean.
 1. Eureka Server
 2. API Gateway
 3. User Service
+4. Order Service
 
 ---
 
