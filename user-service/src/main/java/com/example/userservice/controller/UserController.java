@@ -1,6 +1,6 @@
 package com.example.userservice.controller;
 
-import com.example.userservice.dto.UserDto;
+import com.example.dto.UserDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
