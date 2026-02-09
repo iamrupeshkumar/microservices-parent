@@ -46,12 +46,12 @@ Client → API Gateway → User Service
 
 ## 📦 Project Modules
 
-| Module Name   | Description |
-|--------------|------------|
-| eureka-server | Service discovery server |
-| api-gateway  | Routes requests to microservices |
-| user-service | Demo business microservice |
-| common-lib   | Shared DTOs and utilities |
+| Module Name      | Description                      |
+|------------------|----------------------------------|
+| discovery-server | Eureka service discovery server  |
+| api-gateway      | Routes requests to microservices |
+| user-service     | Demo business microservice       |
+| common-lib       | Shared DTOs and utilities        |
 
 ---
 
