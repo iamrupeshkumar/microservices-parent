@@ -71,7 +71,6 @@ The main goals of this project are to:
 | common-lib       | Shared DTOs and utilities        |
 
 ---
-
 ## 🔗 Inter-Service Communication (Feign Client)
 
 This project uses Spring Cloud OpenFeign for synchronous communication between microservices.
@@ -83,7 +82,7 @@ Currently:
 - Service discovery is handled via **Eureka**
 
 - No hardcoded URLs are used
-
+---
 ## 📚 Common Library
 
 The common-lib module contains shared code such as:
@@ -160,6 +159,12 @@ mvn spring-boot:run
 
 - Add API documentation using Swagger/OpenAPI
 
+---
+## 🌿 Branching Strategy
+
+- main → stable & production-ready
+- develop → active development
+- feature/* → individual features (Feign, Circuit Breaker, etc.)
 
 ---
 
