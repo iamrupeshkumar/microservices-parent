@@ -1,11 +1,11 @@
-package com.example.orderservice.dto;
+package com.example.dto;
 
 public class UserDto {
     private Long id;
     private String name;
     private String email;
 
-    public UserDto() {}
+    public UserDto(){}
 
     public UserDto(Long id, String name, String email) {
         this.id = id;
