@@ -11,9 +11,9 @@
     <modules>
         <module>common-lib</module>
         <module>discovery-server</module>
-        <module>api-gateway1</module>
         <module>user-service</module>
         <module>order-service</module>
+        <module>api-gateway1</module>
     </modules>
 
     <properties>
