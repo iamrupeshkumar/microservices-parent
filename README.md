@@ -103,6 +103,28 @@ This avoids duplication and keeps services clean.
 
 ---
 
+---
+
+## 🧩 Lombok Integration (Feature Branch)
+
+To reduce boilerplate code and improve readability, **Project Lombok** has been introduced
+in a dedicated feature branch: `feature/lombok`.
+
+### Why Lombok?
+- Eliminates constructor, getter, setter, and builder boilerplate
+- Encourages constructor-based dependency injection
+- Improves code clarity and maintainability
+
+### How it’s used
+- `@RequiredArgsConstructor` for constructor injection
+- `@Getter`, `@Setter`, `@Builder` for DTOs and entities
+- `private final` fields for immutability
+
+> ℹ️ This change is currently isolated in a feature branch and will be merged
+> into `main` after validation.
+
+---
+
 ## ▶️ How to Run the Project
 
 ### Prerequisites
