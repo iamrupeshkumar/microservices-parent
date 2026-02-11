@@ -103,8 +103,6 @@ This avoids duplication and keeps services clean.
 
 ---
 
----
-
 ## 🧩 Lombok Integration (Feature Branch)
 
 To reduce boilerplate code and improve readability, **Project Lombok** has been introduced
@@ -122,6 +120,23 @@ in a dedicated feature branch: `feature/lombok`.
 
 > ℹ️ This change is currently isolated in a feature branch and will be merged
 > into `main` after validation.
+
+---
+## Circuit Breaker (Resilience4j)
+
+The Order Service uses **Resilience4j Circuit Breaker** integrated with **Feign Client**
+to prevent cascading failures when User Service is unavailable.
+
+### Key Features
+- Failure monitoring
+- Automatic fallback responses
+- OPEN / HALF_OPEN / CLOSED states
+- Configurable thresholds
+
+### Implementation
+- Resilience4j Spring Boot integration
+- Feign fallback classes
+- Centralized configuration via `application.yml`
 
 ---
 
