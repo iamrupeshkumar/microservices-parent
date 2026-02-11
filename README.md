@@ -135,7 +135,7 @@ to prevent cascading failures when User Service is unavailable.
 
 ### Implementation
 - Resilience4j Spring Boot integration
-- Feign fallback classes
+- Feign fallback methods
 - Centralized configuration via `application.yml`
 
 ---
