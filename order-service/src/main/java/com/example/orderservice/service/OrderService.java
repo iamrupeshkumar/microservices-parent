@@ -1,6 +1,8 @@
 package com.example.orderservice.service;
 
 import com.example.dto.UserDto;
+import com.example.error.ErrorCode;
+import com.example.exception.BusinessException;
 import com.example.orderservice.client.UserClient;
 import com.example.orderservice.response.OrderResponse;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
@@ -19,6 +21,6 @@ public class OrderService {
     }
 
     public OrderResponse createOrderFallback(Long userId, Exception ex){
-        return new OrderResponse(userId, "Order created failed!!", "UNKNOWN USER");
+        throw new BusinessException(ErrorCode.INTERNAL_SERVER_ERROR, "User service is currently unavailable");
     }
 }

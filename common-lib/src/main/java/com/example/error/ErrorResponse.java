@@ -1,7 +1,10 @@
 package com.example.error;
 
+import lombok.Getter;
+
 import java.time.LocalDateTime;
 
+@Getter
 public class ErrorResponse {
     private ErrorCode errorCode;
     private String message;
@@ -11,17 +14,5 @@ public class ErrorResponse {
         this.errorCode = errorCode;
         this.message = message;
         this.timestamp = LocalDateTime.now();
-    }
-
-    public ErrorCode getErrorCode() {
-        return errorCode;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public LocalDateTime getTimestamp() {
-        return timestamp;
     }
 }
