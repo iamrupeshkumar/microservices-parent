@@ -6,7 +6,7 @@ spring:
     name: order-service
 
   datasource:
-    url: jdbc:postgresql://localhost:5433/microdb
+    url: jdbc:postgresql://localhost:5432/microdb
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
