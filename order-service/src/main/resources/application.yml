@@ -23,7 +23,7 @@ spring:
   cloud:
     openfeign:
       circuitbreaker:
-        enabled: true
+        enabled: false
 
 resilience4j:
   circuitbreaker:
@@ -36,6 +36,8 @@ resilience4j:
         wait-duration-in-open-state:
           seconds: 10
         permitted-number-of-calls-in-half-open-state: 3
+        ignore-exceptions:
+          - com.example.exception.BusinessException  # this alone is enough
 
 eureka:
   client:
