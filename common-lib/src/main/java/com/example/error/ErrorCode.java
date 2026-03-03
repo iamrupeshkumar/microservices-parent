@@ -6,10 +6,14 @@ public enum ErrorCode {
     INVALID_REQUEST,
 
     // user domain
-    USER_NOT_FOUND,
+    NOT_FOUND,
     USER_ALREADY_EXISTS,
 
     // Auth
     UNAUTHORIZED,
-    FORBIDDEN
+    FORBIDDEN,
+
+    // Communication
+    SERVICE_UNAVAILABLE
+
 }
