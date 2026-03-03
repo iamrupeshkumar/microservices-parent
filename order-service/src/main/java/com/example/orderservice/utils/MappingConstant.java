@@ -8,6 +8,7 @@ public class MappingConstant {
 
         public static final String HELLO = "/hello";
         public static final String BASE="/api/v1/orders";
-        public static final String CREATE = "/create/{userId}";
+        public static final String CREATE = "/create";
+        public static final String GET_BY_ID = "/{id}";
     }
 }

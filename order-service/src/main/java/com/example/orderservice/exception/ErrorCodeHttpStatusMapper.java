@@ -14,11 +14,14 @@ public class ErrorCodeHttpStatusMapper {
         statusMap.put(ErrorCode.INTERNAL_SERVER_ERROR, HttpStatus.INTERNAL_SERVER_ERROR);
         statusMap.put(ErrorCode.INVALID_REQUEST, HttpStatus.BAD_REQUEST);
 
-        statusMap.put(ErrorCode.USER_NOT_FOUND, HttpStatus.NOT_FOUND);
+        statusMap.put(ErrorCode.NOT_FOUND, HttpStatus.NOT_FOUND);
         statusMap.put(ErrorCode.USER_ALREADY_EXISTS,HttpStatus.CONFLICT);
 
         statusMap.put(ErrorCode.UNAUTHORIZED, HttpStatus.UNAUTHORIZED);
         statusMap.put(ErrorCode.FORBIDDEN, HttpStatus.FORBIDDEN);
+
+        statusMap.put(ErrorCode.SERVICE_UNAVAILABLE, HttpStatus.SERVICE_UNAVAILABLE);
+
     }
 
     public static HttpStatus getHttpStatus(ErrorCode errorCode){
