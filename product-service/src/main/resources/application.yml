@@ -1,9 +1,9 @@
 server:
-  port: 8082
+  port: 8083
 
 spring:
   application:
-    name: order-service
+    name: product-service
 
   datasource:
     url: jdbc:postgresql://localhost:5432/microdb
@@ -28,7 +28,7 @@ spring:
 resilience4j:
   circuitbreaker:
     instances:
-      userService:
+      productService:
         register-health-indicator: true
         sliding-window-size: 10
         minimum-number-of-calls: 5
